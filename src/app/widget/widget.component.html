@@ -1,0 +1,17 @@
+<!-- weather-widget.component.html -->
+
+<section class="weather-widget">
+  <div class="weather-container">
+    <div class="weather-card" *ngFor="let day of weatherData">
+      <div class="card-content">
+        <div class="icon">{{ day.icon }}</div>
+        <div class="date">{{ day.date }}</div>
+        <div class="temperature">
+          <span class="temp-min">Min: {{ day.tempMin }}°C</span>
+          <span class="temp-max">Max: {{ day.tempMax }}°C</span>
+        </div>
+        <div class="wind">Wind: {{ day.windMax }} km/h</div>
+      </div>
+    </div>
+  </div>
+</section>
