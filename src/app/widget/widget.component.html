@@ -1,7 +1,7 @@
 <!-- weather-widget.component.html -->
 
 <section class="weather-widget">
-  <div class="weather-card" *ngFor="let day of weatherData">
+  <div class="weather-card" *ngFor="let day of weatherData" [ngClass]="day.colorClass">
     <div class="card-content">
       <div class="icon">{{ day.icon }}</div>
       <div class="info">

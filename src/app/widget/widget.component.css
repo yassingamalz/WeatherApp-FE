@@ -7,22 +7,21 @@
 }
 
 .weather-card {
-  width: 250px;
-  height: 200px;
-  background-color: white;
-  border: 1px solid #ddd;
+  width: 300px;
+  height: 250px;
+  border: 1px solid #000000;
   border-radius: 10px;
   margin: 10px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
+  font-family: serif;
 }
 
 .weather-card:hover {
   transform: scale(1.05);
-  background-color: #e0e0e0; /* Change to your desired hover background color */
-  color: #333; /* Change to your desired hover font color */
+  background-color: #f3f3f3; /* Light grey on hover */
 }
 
 .card-content {
@@ -30,7 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 10px;
+  padding: 20px;
 }
 
 .icon {
@@ -42,15 +41,33 @@
 }
 
 .date {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
+  color: #000000; /* Dark grey */
 }
 
 .temperature {
-  font-size: 14px;
+  font-size: 16px;
+  color: #000000; /* Grey */
 }
 
 .wind {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 5px;
+  color: #000000; /* Grey */
+}
+
+.sunny {
+  background-color: #ffd54f; /* Amber */
+  color: #000000;
+}
+
+.rainy {
+  background-color: #4fc3f7; /* Light blue */
+  color: #050404;
+}
+
+.cloudy {
+  background-color: #90a4ae; /* Blue-grey lighten-2 */
+  color: #000000;
 }
