@@ -1,10 +1,10 @@
 <!-- weather-widget.component.html -->
 
 <section class="weather-widget">
-  <div class="weather-container">
-    <div class="weather-card" *ngFor="let day of weatherData">
-      <div class="card-content">
-        <div class="icon">{{ day.icon }}</div>
+  <div class="weather-card" *ngFor="let day of weatherData">
+    <div class="card-content">
+      <div class="icon">{{ day.icon }}</div>
+      <div class="info">
         <div class="date">{{ day.date }}</div>
         <div class="temperature">
           <span class="temp-min">Min: {{ day.tempMin }}°C</span>
